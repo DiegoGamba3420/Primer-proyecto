@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Registro médico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Formulario de registro médico</h1>
+    </header>
+    <main> 
+        <form id="Registro-medico-form">
+            <label for="nombre"><b>Nombre:</b></label>
+            <input type="text" placeholder="ingrese su nombre" id="nombre" name="nombre" required><br>
+            <label for="apellido"><b>Apellido:</b></label>
+            <input type="text" placeholder="ingrese su apellido" id="apellido" name="apellido" required><br>
+            <label for="cedula"><b>Numero de cedula:</b></label>
+            <input type="number" placeholder="ingrese su cedula" id="cedula" name="cedula" required><br>
+            <label for="Teléfono"><b>Teléfono</b></label>
+            <input type="number" placeholder="ingrese su Teléfono" id="Teléfono" name="Teléfono" required><br>
+            <label for="consultorio"><b>Numero de consultorio:</b></label>
+            <input type="number" placeholder="numero de consultorio" id="consultorio" name="consultorio" required><br>
+            <label for="correo"><b>correo:</b></label>
+            <input type="email" placeholder="ingrese su correo" id="correo" name="correo" required><br>
+            <label for="especialidad"><b>especialidad requerida:</b></label>
+            <select name="especialidad" id="especialidad" required>
+                <option value="">-----------------selecione la especialidad---------------</option>
+                <option value="Medicina general">Medicina general</option>
+                <option value="Cardiología">Cardiología</option>
+                <option value="Medicina interna">Medicina interna</option>
+                <option value="Dermatología">Dermatologia</option>
+                <option value="Rehabilitación física">Rehabilitación física</option>
+                <option value="Psicología">Psicología</option>
+                <option value="Odontología">Odontología</option>
+                <option value="Radiología">Radiología</option> 
+                </select><br><br>
+            <input type="submit" value="enviar">
+        </form>
+    <div class="boton-container">
+        <a href="index.html"><input type="button" value="volver"></a>
+    </div>
+    </main>
+    <footer>
+        <h3>Realizado por:</h3>
+        <p>Diego Gamba</p>
+    </footer>
+    <script src="../app.js"></script>  
+</body>
+</html>
